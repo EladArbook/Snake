@@ -1,0 +1,114 @@
+* {
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#game {
+    width: 500px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+#menu {
+    border: 1px solid black;
+    height: 37px;
+    margin: 0px;
+    width: 100%;
+    background-color: rgba(188, 32, 32, 0.854);
+}
+
+#map { /*table*/
+    /* 260 x 500 */
+    height: 260px;
+    display: block;
+    border-spacing: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-indent: 0px;
+    background-image: url("Assets/map.png");
+        /* line-height: 0; */
+
+}
+
+#map tr {
+     /*    background-color: blue; */
+     /*////////////////////////////////////////////////////////////////////////////////*/
+    height: 20px;
+
+    /* border: hidden; */
+
+}
+
+#map tr td {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    padding: 0px;
+    background-size: contain;
+    color: white;
+    font-weight: bold;
+    
+    
+    /*     background-color: yellow; */
+    /*     border: 1px solid transparent; */
+
+
+    /* border-collapse: collapse; */
+
+}
+
+#start{
+    border-radius: 20px;
+    border: 2px solid black;
+    height: 33px;
+    width: 33px;
+    background-color: rgb(129, 207, 12);
+    font-weight: bold;
+    display: inline-block;
+}
+
+#start:active{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#scoreDis{
+    border: 1px solid rgb(0, 0, 0);
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: rgb(213, 84, 84);
+    border-radius: 4px;
+    float: right;
+    margin: 4px;
+    display: inline-block;
+}
+
+#leftRes{
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-right: 0px;
+}
+
+#rightRes{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 0px;
+}
+
+.resButton{
+height: 11px;
+margin-top: 2px;
+padding-bottom: 2px;
+width: 18px;
+box-sizing: content-box;
+background-color: transparent;
+font-weight: bold;
+}
+

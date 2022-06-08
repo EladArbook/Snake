@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game">
+        <div id="menu">
+            <button onclick="start()" id="start">Start</button>
+            <span id="scoreDis">0</span>
+        </div>
+        <table id="map" cell-padding="0px" cellspacing="0">
+            <!-- 13 x 25 -->
+
+            <tr id="r1">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r2">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r3">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r4">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r5">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r6">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r7">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r8">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r9">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r10">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r11">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r12">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+            <tr id="r13">
+                <td class="d1"></td>
+                <td class="d2"></td>
+                <td class="d3"></td>
+                <td class="d4"></td>
+                <td class="d5"></td>
+                <td class="d6"></td>
+                <td class="d7"></td>
+                <td class="d8"></td>
+                <td class="d9"></td>
+                <td class="d10"></td>
+                <td class="d11"></td>
+                <td class="d12"></td>
+                <td class="d13"></td>
+                <td class="d14"></td>
+                <td class="d15"></td>
+                <td class="d16"></td>
+                <td class="d17"></td>
+                <td class="d18"></td>
+                <td class="d19"></td>
+                <td class="d20"></td>
+                <td class="d21"></td>
+                <td class="d22"></td>
+                <td class="d23"></td>
+                <td class="d24"></td>
+                <td class="d25"></td>
+            </tr>
+        </table>
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+\
+</body>
+
+</html>
